@@ -20,7 +20,7 @@ export default css`
         color: white;
         font-size: 1.4rem;
         padding: 10px;
-        position: absolute;
+        position: fixed;
         right: 32px;
     }
 `;
