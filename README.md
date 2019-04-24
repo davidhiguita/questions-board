@@ -9,6 +9,7 @@ When questions are loaded you only need click over a yellow card, after click yo
 
 ![Questions Board Screenshot](./static/app.png)
 
+
 ## Local Server for data
 To use the app correctly you must start these three scripts:
 
