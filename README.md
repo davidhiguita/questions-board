@@ -13,5 +13,7 @@ When questions are loaded you only need click over a yellow card, after click yo
 To use the app correctly you must start these three scripts:
 
 `npm run start:db`: To start mongodb
+
 `npm run start:server`: To start express server
+
 `npm run dev`: To start the client app
