@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styles from './styles';
 
-const Layout = ({ children, questions, title }) => (
+const Layout = ({ children, title }) => (
     <>
         <Head>
             <link rel="stylesheet" href="/static/bulma.min.css" />

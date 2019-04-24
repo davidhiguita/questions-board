@@ -3,6 +3,9 @@ import Layout from '../components/layout';
 import QuestionsGrid from '../components/questions-grid';
 import Modal from '../components/modal';
 import { setQuestionState } from '../helpers';
+import { getAllQuestions, updateQuestion } from '../api';
+
+import 'isomorphic-fetch';
 
 class QuestionsBoard extends React.PureComponent {
     constructor() {
@@ -10,7 +13,7 @@ class QuestionsBoard extends React.PureComponent {
 
         this.state = {
             isModalOpened: false,
-            questions: QUESTIONS,
+            questions: [],
             selectedQuestion: {}
         };
 
@@ -30,7 +33,7 @@ class QuestionsBoard extends React.PureComponent {
             questions: updatedQuestions,
             selectedQuestion: {}
         }, () => {
-            localStorage.setItem('questions', JSON.stringify(updatedQuestions));
+            updateQuestion(id, isCorrect);
         });
     }
 
@@ -42,8 +45,8 @@ class QuestionsBoard extends React.PureComponent {
         });
     }
 
-    setQuestions = (newQuestions) => {
-        this.setState({ questions: newQuestions });
+    updateInitialQuestions = (newQuestions) => {
+        this.setState({ questions: newQuestions.data });
     }
 
     render() {
@@ -57,10 +60,11 @@ class QuestionsBoard extends React.PureComponent {
                     closeModal={this.setModalVisibility(false, {})}
                     visible={isModalOpened}
                 />
-                <Layout questions={questions} title="Preguntas">
+                <Layout title="Preguntas">
                     <QuestionsGrid
                         questions={questions}
                         setModalVisibility={this.setModalVisibility}
+                        updateInitialQuestions={this.updateInitialQuestions}
                     />
                 </Layout>
             </>
