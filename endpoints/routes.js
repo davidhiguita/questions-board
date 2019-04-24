@@ -41,4 +41,13 @@ router.put('/reset', (req, res) => {
     });    
 });
 
+router.post('/add', (req, res) => {
+    QuestionModel.insertMany(req.body, (error, data) => {
+        if (error) {
+            return res.status(500).json({ data, error })
+        }
+        return res.status(200).json({ data, error: null })
+    });    
+});
+
 module.exports = router;
