@@ -1,4 +1,4 @@
-export default [
+export const questionsObjects = [
     {
         "id" : 1,
         "isCorrect" : null,
@@ -149,4 +149,17 @@ export default [
         "isCorrect" : null,
         "question" : "My DataBase Question #10"
     },
-]
+];
+
+export const questions = [
+    'Multiplicar por 11 un número de 2 cifras. >>Suma los dos dígitos >>El resultado ponlo entre los dos dígitos originales >> ejm1: 43*11 = 4(4+3)3 = 473 >> ejm2: 85*11 = 8(13)5 = 935',
+    'Sucesión de Fibonacci. >> ejm: elige dos números y dibújalos en columna el menor debajo del mayor >> suma los dos números >> suma el resultado con el número anterio >> repite hasta tener una columna de 10 números. >> el resultado es el séptimo número x 11',
+    'Hay meses que tiene 30 dias y otros 31 días. ¿Cuantos meses tienen 28 días?',
+    'En una caja, se tiene 200 canicas de color verde, 200 de color rojo, 200 de color azul, 200 de color  negro y 250 de color amarillo. ¿Cuál es el  menor número de canicas que se debe extraer al azar para  tener, con certeza, al menos 100 canicas del mismo color?',
+    '¿Eres capaz de sumar los número del 1 al 100 en pocos segundos?',
+    '¿Sabes que 3^2 + 4^2 = 5^2? Fermat afirmó que no hay números que encajen en el patrón (a^n + b^n = c^n) cuando se eleva a una potencia superior a 2.',
+    'La respuesta SIEMPRE es 2. Empecemos por un truco fácil. >> Elige un número >> Multiplícalo por 3 >>Súmale 6 >>Divide ese resultado por 3 >>Réstale el número que elegiste en un principio. ¿cuál es el resultado?',
+    'El número clave es 37. >> Elige un número de tres cifras con sus dígitos iguales. >> Suma sus dígitos >> Divide el número original entre el resultado de la suma anterio. ¿Cúanto te dio el resultado?',
+    'Divisible por 9. >>Elige un número de varios dígitos >>Escríbelo al revés >>Resta el número invertido del original >> El resultado siempre será divisible por 3',
+    '¿Cuántas veces se puede dividir un papel a la mitad?  Rta: 7 veces (máximo 8). 12 veces con 1km. SI DOBLO UNA HORA DE 0.01mm DE GROSOR 54 VECES CUBRIRÍA MÁS DE LA DISTANCIA DE LA TIERRA AL SOL.'
+];
