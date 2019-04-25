@@ -2,7 +2,7 @@ import QUESTIONS from '../questions';
 import Layout from '../components/layout';
 import QuestionsGrid from '../components/questions-grid';
 import Modal from '../components/modal';
-import { setQuestionState } from '../helpers';
+import { setQuestionState, shuffleArray } from '../helpers';
 import { getAllQuestions, updateQuestion } from '../api';
 
 import 'isomorphic-fetch';
@@ -62,7 +62,7 @@ class QuestionsBoard extends React.PureComponent {
                 />
                 <Layout title="Preguntas">
                     <QuestionsGrid
-                        questions={questions}
+                        questions={shuffleArray(questions, false)}
                         setModalVisibility={this.setModalVisibility}
                         updateInitialQuestions={this.updateInitialQuestions}
                     />

@@ -10,6 +10,7 @@ class QuestionsGrid extends React.PureComponent {
 
     resetQuestions = () => {
         const { error } = resetQuestions();
+        // debugger;
         if (!error) {
             const { updateInitialQuestions } = this.props;
             getAllQuestions(updateInitialQuestions);

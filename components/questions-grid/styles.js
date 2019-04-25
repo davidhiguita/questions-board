@@ -18,6 +18,7 @@ export default css`
         border-radius: 10px;
         bottom: 32px;
         color: white;
+        cursor: pointer;
         font-size: 1.4rem;
         padding: 10px;
         position: fixed;

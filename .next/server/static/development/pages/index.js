@@ -581,7 +581,8 @@ function (_React$PureComponent) {
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "resetQuestions", function () {
       var _resetQuestions = Object(_api__WEBPACK_IMPORTED_MODULE_10__["resetQuestions"])(),
-          error = _resetQuestions.error;
+          error = _resetQuestions.error; // debugger;
+
 
       if (!error) {
         var updateInitialQuestions = _this.props.updateInitialQuestions;
@@ -608,7 +609,7 @@ function (_React$PureComponent) {
         className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash) + " " + "questions-grid",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 23
         },
         __self: this
       }, questions.map(function (question) {
@@ -618,7 +619,7 @@ function (_React$PureComponent) {
           setModalVisibility: setModalVisibility,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 25
+            lineNumber: 26
           },
           __self: this
         });
@@ -627,7 +628,7 @@ function (_React$PureComponent) {
         className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash) + " " + "reset-button",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 34
         },
         __self: this
       }, "Reiniciar"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -653,9 +654,9 @@ function (_React$PureComponent) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var _defaultExport = new String(".questions-grid.jsx-2216643978{display:grid;grid-gap:15px;grid-auto-columns:minmax(160px,1fr);grid-template-columns:repeat(auto-fill,minmax(160px,1fr));grid-auto-rows:minmax(160px,1fr);grid-template-rows:repeat(auto-fill,minmax(160px,1fr));height:calc(100vh - 60px);padding:15px;position:relative;}.reset-button.jsx-2216643978{background-color:orange;border-radius:10px;bottom:32px;color:white;font-size:1.4rem;padding:10px;position:fixed;right:32px;}");
+var _defaultExport = new String(".questions-grid.jsx-1500261826{display:grid;grid-gap:15px;grid-auto-columns:minmax(160px,1fr);grid-template-columns:repeat(auto-fill,minmax(160px,1fr));grid-auto-rows:minmax(160px,1fr);grid-template-rows:repeat(auto-fill,minmax(160px,1fr));height:calc(100vh - 60px);padding:15px;position:relative;}.reset-button.jsx-1500261826{background-color:orange;border-radius:10px;bottom:32px;color:white;cursor:pointer;font-size:1.4rem;padding:10px;position:fixed;right:32px;}");
 
-_defaultExport.__hash = "2216643978";
+_defaultExport.__hash = "1500261826";
 /* harmony default export */ __webpack_exports__["default"] = (_defaultExport);
 
 /***/ }),
@@ -664,12 +665,13 @@ _defaultExport.__hash = "2216643978";
 /*!********************!*\
   !*** ./helpers.js ***!
   \********************/
-/*! exports provided: setQuestionState */
+/*! exports provided: setQuestionState, shuffleArray */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setQuestionState", function() { return setQuestionState; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "shuffleArray", function() { return shuffleArray; });
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_1__);
@@ -687,6 +689,28 @@ var setQuestionState = function setQuestionState(_ref) {
 
   currentQuestions[updatedQuestionIndex] = _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_1___default()({}, currentQuestions[updatedQuestionIndex], Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, newData));
   return currentQuestions;
+};
+var shuffleArray = function shuffleArray(array) {
+  var randomSorting = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+
+  var newArray = _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_1___default()([], array);
+
+  if (!randomSorting) {
+    return newArray;
+  }
+
+  var currentIndex = newArray.length;
+  var temp, randomIndex;
+
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temp = newArray[currentIndex];
+    newArray[currentIndex] = newArray[randomIndex];
+    newArray[randomIndex] = temp;
+  }
+
+  return newArray;
 };
 
 /***/ }),
@@ -2046,7 +2070,7 @@ function (_React$PureComponent) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_questions_grid__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        questions: questions,
+        questions: Object(_helpers__WEBPACK_IMPORTED_MODULE_12__["shuffleArray"])(questions, false),
         setModalVisibility: this.setModalVisibility,
         updateInitialQuestions: this.updateInitialQuestions,
         __source: {
