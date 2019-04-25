@@ -52,7 +52,7 @@ export default [
     {
         "id" : 11,
         "isCorrect" : null,
-        "question" : "My DataBase Question #10"
+        "question" : "¿Eres capaz de sumar los número del 1 al 100 en pocos segundos?"
     },
     {
         "id" : 12,

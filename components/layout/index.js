@@ -11,7 +11,7 @@ const Layout = ({ children, title }) => (
 
         <div className="layout">
             <header className="layout__header">
-                Preguntas
+                {title}
             </header>
 
             <section className="layout__content">

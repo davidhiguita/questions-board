@@ -296,7 +296,7 @@ var Layout = function Layout(_ref) {
       lineNumber: 13
     },
     __self: this
-  }, "Preguntas"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
+  }, title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
     className: "jsx-3826850400 " + "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_3__["default"].__hash) + " " + "layout__content",
     __source: {
       fileName: _jsxFileName,
@@ -309,7 +309,7 @@ var Layout = function Layout(_ref) {
   }, _styles__WEBPACK_IMPORTED_MODULE_3__["default"]), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "3826850400",
     __self: this
-  }, "body:{height:100vh;margin:0;padding:0;width:100vw;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYXZpZGhpZ3VpdGEvRG9jdW1lbnRzL2Rldi9teS1wcm9qZWN0cy9xdWVzdGlvbnMtYm9hcmQvY29tcG9uZW50cy9sYXlvdXQvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBc0IrQixBQUdrQyxhQUNKLFNBQ0MsVUFDRSxZQUNoQiIsImZpbGUiOiIvVXNlcnMvZGF2aWRoaWd1aXRhL0RvY3VtZW50cy9kZXYvbXktcHJvamVjdHMvcXVlc3Rpb25zLWJvYXJkL2NvbXBvbmVudHMvbGF5b3V0L2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJztcbmltcG9ydCBzdHlsZXMgZnJvbSAnLi9zdHlsZXMnO1xuXG5jb25zdCBMYXlvdXQgPSAoeyBjaGlsZHJlbiwgdGl0bGUgfSkgPT4gKFxuICAgIDw+XG4gICAgICAgIDxIZWFkPlxuICAgICAgICAgICAgPGxpbmsgcmVsPVwic3R5bGVzaGVldFwiIGhyZWY9XCIvc3RhdGljL2J1bG1hLm1pbi5jc3NcIiAvPlxuICAgICAgICAgICAgPGxpbmsgcmVsPVwiaWNvblwiIHR5cGU9XCJpbWFnZS9wbmdcIiBocmVmPVwiL3N0YXRpYy9mYXZpY29uLnBuZ1wiIC8+XG4gICAgICAgICAgICA8dGl0bGU+e3RpdGxlfTwvdGl0bGU+XG4gICAgICAgIDwvSGVhZD5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImxheW91dFwiPlxuICAgICAgICAgICAgPGhlYWRlciBjbGFzc05hbWU9XCJsYXlvdXRfX2hlYWRlclwiPlxuICAgICAgICAgICAgICAgIFByZWd1bnRhc1xuICAgICAgICAgICAgPC9oZWFkZXI+XG5cbiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cImxheW91dF9fY29udGVudFwiPlxuICAgICAgICAgICAgICAgIHtjaGlsZHJlbn1cbiAgICAgICAgICAgIDwvc2VjdGlvbj5cblxuICAgICAgICAgICAgPHN0eWxlIGpzeD57c3R5bGVzfTwvc3R5bGU+XG5cbiAgICAgICAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgICAgICAgICAgYm9keToge1xuICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDEwMHZoO1xuICAgICAgICAgICAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgICAgICAgICAgICAgIHdpZHRoOiAxMDB2dztcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICBgfTwvc3R5bGU+XG4gICAgICAgIDwvZGl2PlxuICAgIDwvPlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgTGF5b3V0O1xuIl19 */\n/*@ sourceURL=/Users/davidhiguita/Documents/dev/my-projects/questions-board/components/layout/index.js */")));
+  }, "body:{height:100vh;margin:0;padding:0;width:100vw;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYXZpZGhpZ3VpdGEvRG9jdW1lbnRzL2Rldi9teS1wcm9qZWN0cy9xdWVzdGlvbnMtYm9hcmQvY29tcG9uZW50cy9sYXlvdXQvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBc0IrQixBQUdrQyxhQUNKLFNBQ0MsVUFDRSxZQUNoQiIsImZpbGUiOiIvVXNlcnMvZGF2aWRoaWd1aXRhL0RvY3VtZW50cy9kZXYvbXktcHJvamVjdHMvcXVlc3Rpb25zLWJvYXJkL2NvbXBvbmVudHMvbGF5b3V0L2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJztcbmltcG9ydCBzdHlsZXMgZnJvbSAnLi9zdHlsZXMnO1xuXG5jb25zdCBMYXlvdXQgPSAoeyBjaGlsZHJlbiwgdGl0bGUgfSkgPT4gKFxuICAgIDw+XG4gICAgICAgIDxIZWFkPlxuICAgICAgICAgICAgPGxpbmsgcmVsPVwic3R5bGVzaGVldFwiIGhyZWY9XCIvc3RhdGljL2J1bG1hLm1pbi5jc3NcIiAvPlxuICAgICAgICAgICAgPGxpbmsgcmVsPVwiaWNvblwiIHR5cGU9XCJpbWFnZS9wbmdcIiBocmVmPVwiL3N0YXRpYy9mYXZpY29uLnBuZ1wiIC8+XG4gICAgICAgICAgICA8dGl0bGU+e3RpdGxlfTwvdGl0bGU+XG4gICAgICAgIDwvSGVhZD5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImxheW91dFwiPlxuICAgICAgICAgICAgPGhlYWRlciBjbGFzc05hbWU9XCJsYXlvdXRfX2hlYWRlclwiPlxuICAgICAgICAgICAgICAgIHt0aXRsZX1cbiAgICAgICAgICAgIDwvaGVhZGVyPlxuXG4gICAgICAgICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJsYXlvdXRfX2NvbnRlbnRcIj5cbiAgICAgICAgICAgICAgICB7Y2hpbGRyZW59XG4gICAgICAgICAgICA8L3NlY3Rpb24+XG5cbiAgICAgICAgICAgIDxzdHlsZSBqc3g+e3N0eWxlc308L3N0eWxlPlxuXG4gICAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICAgICAgICAgIGJvZHk6IHtcbiAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAxMDB2aDtcbiAgICAgICAgICAgICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgICAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICAgICAgICAgICAgICB3aWR0aDogMTAwdnc7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICA8L2Rpdj5cbiAgICA8Lz5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IExheW91dDtcbiJdfQ== */\n/*@ sourceURL=/Users/davidhiguita/Documents/dev/my-projects/questions-board/components/layout/index.js */")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -581,8 +581,7 @@ function (_React$PureComponent) {
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "resetQuestions", function () {
       var _resetQuestions = Object(_api__WEBPACK_IMPORTED_MODULE_10__["resetQuestions"])(),
-          error = _resetQuestions.error; // debugger;
-
+          error = _resetQuestions.error;
 
       if (!error) {
         var updateInitialQuestions = _this.props.updateInitialQuestions;
@@ -609,7 +608,7 @@ function (_React$PureComponent) {
         className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash) + " " + "questions-grid",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 22
         },
         __self: this
       }, questions.map(function (question) {
@@ -619,7 +618,7 @@ function (_React$PureComponent) {
           setModalVisibility: setModalVisibility,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 26
+            lineNumber: 25
           },
           __self: this
         });
@@ -628,7 +627,7 @@ function (_React$PureComponent) {
         className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash) + " " + "reset-button",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 33
         },
         __self: this
       }, "Reiniciar"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -2063,7 +2062,7 @@ function (_React$PureComponent) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        title: "Preguntas",
+        title: "Curiosidades",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 63
@@ -2141,7 +2140,7 @@ __webpack_require__.r(__webpack_exports__);
 }, {
   "id": 11,
   "isCorrect": null,
-  "question": "My DataBase Question #10"
+  "question": "¿Eres capaz de sumar los número del 1 al 100 en pocos segundos?"
 }, {
   "id": 12,
   "isCorrect": null,

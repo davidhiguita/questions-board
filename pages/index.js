@@ -60,7 +60,7 @@ class QuestionsBoard extends React.PureComponent {
                     closeModal={this.setModalVisibility(false, {})}
                     visible={isModalOpened}
                 />
-                <Layout title="Preguntas">
+                <Layout title="Curiosidades">
                     <QuestionsGrid
                         questions={shuffleArray(questions, false)}
                         setModalVisibility={this.setModalVisibility}

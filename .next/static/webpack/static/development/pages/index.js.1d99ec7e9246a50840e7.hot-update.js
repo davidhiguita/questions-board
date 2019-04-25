@@ -121,14 +121,14 @@ function (_React$PureComponent) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        title: "Preguntas",
+        title: "Curiosidades",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 63
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_questions_grid__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        questions: Object(_helpers__WEBPACK_IMPORTED_MODULE_12__["shuffleArray"])(questions),
+        questions: Object(_helpers__WEBPACK_IMPORTED_MODULE_12__["shuffleArray"])(questions, false),
         setModalVisibility: this.setModalVisibility,
         updateInitialQuestions: this.updateInitialQuestions,
         __source: {
@@ -148,4 +148,4 @@ function (_React$PureComponent) {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.90039455b0ddf8a23a32.hot-update.js.map
+//# sourceMappingURL=index.js.1d99ec7e9246a50840e7.hot-update.js.map
